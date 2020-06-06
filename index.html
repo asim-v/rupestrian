@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		.muusk{
+			font-family: 'Raleway', sans-serif;
+			font-size: 70pt;
+			color: white;
+		    text-shadow: 2px 2px 4px #000000;
+
+		}
+		body {
+		    margin: 0;
+		    font-family: Microsoft YaHei UI Light, sans-serif;
+		    background: url('Assets/Giphy.gif')no-repeat fixed center;
+		    background-size: 100% 100%;
+
+		}
+		.b{
+			color: #f2f2f2
+		}
+		.topnav {
+		  overflow: hidden;
+		  background-color: #000000;
+	      position: fixed;
+	      width: 100%;
+          top: 100;
+
+		}
+
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 10px 2%;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.topnav a:hover {
+		  background-color: #383838;
+		  color: black;
+		}
+
+		.topnav a.active {
+		  background-color: #5b382c;
+		  color: white;
+		}
+
+		.topnav .icon {
+		  display: none;
+		}
+
+		.zoom {
+		  padding: 50px;
+    	  background-size: 100% 100%;
+		  transition: transform .2s;
+		  width: 300px;
+		  height: 300px;
+		  margin: 0 auto;
+		}
+
+		.zoom:hover {
+		  -ms-transform: scale(1.2); /* IE 9 */
+		  -webkit-transform: scale(1.2); /* Safari 3-8 */
+		  transform: scale(1.2); 
+		  opacity: 0.4;
+		}		
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  width: 100%;
+		}
+
+		th, td {
+		    text-align: left;
+			padding: 8px;
+		}
+	    .contents {
+  		  	background-color: #111111;
+		    color:#0c0c0c;
+		    height: 4000px;
+		    width: auto;
+
+  		}
+
+		*,
+		:after,
+		:before {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		section {
+		  height: 100vh;
+		  width: 100%;
+		  display: table;
+		  
+		}
+		section.ok{
+		  background-color: #555;
+		}
+
+		p{
+		  color: white;
+		  font-family: arial;
+		  display: table-cell;
+		  text-align: center;
+		  vertical-align: middle;
+		}
+
+		.scroll-down {
+		  opacity: 1;
+		  -webkit-transition: all .5s ease-in 3s;
+		  transition: all .5s ease-in 3s;
+		}
+
+		.scroll-down {
+		  position: absolute;
+		  bottom: 30px;
+		  left: 50%;
+		  margin-left: -16px;
+		  display: block;
+		  width: 32px;
+		  height: 32px;
+		  border: 2px solid #FFF;
+		  background-size: 14px auto;
+		  border-radius: 50%;
+		  z-index: 2;
+		  -webkit-animation: bounce 2s infinite 2s;
+		  animation: bounce 2s infinite 2s;
+		  -webkit-transition: all .2s ease-in;
+		  transition: all .2s ease-in;
+		  transform: scale(1)
+		}
+
+		.scroll-down:before {
+		    position: absolute;
+		    top: calc(50% - 8px);
+		    left: calc(50% - 6px);
+		    transform: rotate(-45deg);
+		    display: block;
+		    width: 12px;
+		    height: 12px;
+		    content: "";
+		    border: 2px solid white;
+		    border-width: 0px 0 2px 2px;
+		}
+
+		@keyframes bounce {
+		  0%,
+		  100%,
+		  20%,
+		  50%,
+		  80% {
+		    -webkit-transform: translateY(0);
+		    -ms-transform: translateY(0);
+		    transform: translateY(0);
+		  }
+		  40% {
+		    -webkit-transform: translateY(-10px);
+		    -ms-transform: translateY(-10px);
+		    transform: translateY(-10px);
+		  }
+		  60% {
+		    -webkit-transform: translateY(-5px);
+		    -ms-transform: translateY(-5px);
+		    transform: translateY(-5px);
+		  }
+		}
+
+	</style>
+</head>	
+	<body>
+
+	<div class="topnav" id="myTopnav">
+	  <a href="#home" class="active">Home</a>
+	  <a href="#about">About Us</a>
+	  <a href="#publications">Publications</a>
+	  <a href="#panoramas">Panoramas</a>
+	  <a href="#GIS">GIS</a>
+	  <a href="#Delta t">Delta T</a>
+	  <a href="#Delta t">Digital Enhancement</a>
+	  <a href="#Delta t">Major Projects</a>
+	  <a href="#Delta t">Contact US</a>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+
+ 	<script type="text/javascript">
+		 $(function() {
+		    $('.scroll-down').click (function() {
+		      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+		      return false;
+		    });
+		  });			
+	</script>
+
+	</div>	<section>
+	<br><br><br><br><br>
+	<div class="muusk">Rupestrian Cyber - Services</div><br>
+	<div class="muusk" style="font-size: 30pt; font-family: Microsoft YaHei UI Light">Evelyn Billo & Robert Mark, Ph.D.</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+
+	<a href="#" class="scroll-down" address="true"></a>
+	</section>
+
+	<section class="ok">	
+	<div class="contents">
+
+	</div>	
+	</section>
+
+
+</body>
+</html>
